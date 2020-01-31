@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "Articles",
   "info": {
     "name": "Article"
   },
@@ -12,8 +14,23 @@
     },
     "published_at": {
       "type": "date"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "gallery_url": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "articles",
+      "dominant": true
     }
-  },
-  "connection": "default",
-  "collectionName": "Articles"
+  }
 }

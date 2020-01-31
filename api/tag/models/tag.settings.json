@@ -17,6 +17,10 @@
     "url": {
       "type": "string",
       "required": false
+    },
+    "articles": {
+      "via": "tags",
+      "collection": "article"
     }
   }
 }
