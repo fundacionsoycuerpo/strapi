@@ -1,8 +1,15 @@
-'use strict';
+"use strict";
 
 /**
  * Read the documentation (https://strapi.io/documentation/3.0.0-beta.x/concepts/controllers.html#core-controllers)
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  async findOneBySlug(ctx) {
+    const entity = await strapi.services["department"].findOne({
+      slug: ctx.params.slug || ctx.params._slug
+    });
+    return sanitizeEntity(entity, { model: strapi.models["department"] });
+  }
+};

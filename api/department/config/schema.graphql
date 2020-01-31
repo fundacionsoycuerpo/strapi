@@ -1,0 +1,13 @@
+module.exports = {
+  query: `
+    departmentBySlug(slug: String!): Department
+  `,
+  resolver: {
+    Query: {
+      department: {
+        description: "Return a single department",
+        resolver: "department.findOneBySlug"
+      }
+    }
+  }
+};
