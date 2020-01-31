@@ -4,7 +4,7 @@ module.exports = {
   `,
   resolver: {
     Query: {
-      department: {
+      departmentBySlug: {
         description: "Return a single department",
         resolver: "department.findOneBySlug"
       }

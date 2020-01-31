@@ -18,15 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/departments/:id",
-      "handler": "department.findOne",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "GET",
-      "path": "/departments/slug/:slug",
+      "path": "/departments/:slug",
       "handler": "department.findOneBySlug",
       "config": {
         "policies": []
