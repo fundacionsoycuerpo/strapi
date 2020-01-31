@@ -25,6 +25,14 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/departments/slug/:slug",
+      "handler": "department.findOneBySlug",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/departments",
       "handler": "department.create",
