@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Department"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "manifest": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "tag": {
+      "model": "tag"
+    }
+  },
+  "connection": "default",
+  "collectionName": "Departments"
+}
