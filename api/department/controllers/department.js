@@ -7,7 +7,6 @@ const { sanitizeEntity } = require('strapi-utils');
 
 module.exports = {
   async findOneBySlug(ctx) {
-    console.log(ctx.params);
     const entity = await strapi.services.department.findOne({
       slug: ctx.params.slug || ctx.params._slug
     });
