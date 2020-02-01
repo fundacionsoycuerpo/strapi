@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "fundacionsoycuerpo-admin",
+    "routes": [
+      { "src": "^/", "dest": "/index.html" },
+      { "src": "^/dashboard/(.*)", "dest": "/$1" }
+    ],
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      }
+    },
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }

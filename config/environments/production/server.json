@@ -9,6 +9,15 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": false
+    "autoOpen": false,
+    "path": "/dashboard",
+    "build": {
+      "host": "https://strapi.fundacionsoycuerpo.cl",
+      "backend": "https://fundacionsoycuerpo-strapi.herokuapp.com",
+      "plugins": {
+        "source":  "host",
+        "folder": "/plugins"
+      }
+    }
   }
 }
