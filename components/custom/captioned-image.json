@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "captioned_image",
+    "icon": "blind"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "caption": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "captioned_images"
+}

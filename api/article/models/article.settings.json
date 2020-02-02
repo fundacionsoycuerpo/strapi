@@ -21,16 +21,16 @@
     "gallery_url": {
       "type": "string"
     },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
     "tags": {
       "collection": "tag",
       "via": "articles",
       "dominant": true
+    },
+    "media": {
+      "type": "component",
+      "repeatable": false,
+      "component": "custom.captioned-image",
+      "required": true
     }
   }
 }

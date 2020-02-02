@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "Members",
   "info": {
     "name": "Member"
   },
@@ -20,13 +22,11 @@
     "role": {
       "type": "string"
     },
-    "profile": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
+    "avatar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "custom.captioned-image",
       "required": true
     }
-  },
-  "connection": "default",
-  "collectionName": "Members"
+  }
 }
